@@ -1,8 +1,19 @@
-# React + Vite
+# todo_sheryian
+A framer motion todo list. made by me. designed by sheryian coding school.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. clone the repo
+```sh
+git clone `url`
+```
+2. run the vite command inside folder
+```sh
+cd react-docs
+npm run dev
+```
+3. You can test this app using mobile
+```sh
+npm run dev --host
+```
+note-`vite does not allow network hosting so this will allow to run app on any device.`
+<img width="237" alt="image" src="https://github.com/ak-khandelwal/todo_sheryian/assets/140736381/32b43736-365c-42ba-aaaf-0e18a8266b39">
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
