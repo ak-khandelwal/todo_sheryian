@@ -6,12 +6,12 @@ const Card = ({movie,description}) => {
       return string.split(' ').filter(Boolean).length;
   }
   return (
-    <article className='card-item w-60 h-72 rounded-[20px] bg-zinc-900/90 p-2 text-white m-4 relative'>
-      <header className='bg-orange-600 absolute top-0 left-0 w-[100%] text-center'><h5>{movie}</h5></header>
+    <article className='card-item w-60 h-72 rounded-[20px] bg-zinc-900/90 p-2 text-white m-4 relative p-0'>
+      <header className='bg-orange-600 w-[100%] text-center sticky top-0'><h5>{movie}</h5></header>
         <p className= 'h-50 py-4 text-center'>
-            {description}
+            {description} Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, facilis earum fugit minus accusantium asperiores quis exercitationem harum vel commodi tempora blanditiis corrupti rem, ad iste. Accusamus corporis, saepe aliquam dolore assumenda nam autem aperiam! Neque rerum voluptate aspernatur? Pariatur ullam eius optio? Labore, tenetur iure repellendus deserunt sequi animi.
         </p>
-        <footer className='absolute left-0 bottom-0 bg-zinc-900 w-[100%] text-center'>
+        <footer className='bottom-0 bg-zinc-900 w-[100%] text-center'>
           <p>
           word length {countWord(description)}
           </p>
