@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import MovieArray from './Data.js';
 import Card from './Card';
-import '../CSS/Foreground.css';
+// import '../CSS/Foreground.css';
 import '../CSS/Card.css';
 const Foreground = () => {
+  const [cards, setCards] = useState(MovieArray);
+  useEffect(() => {
+    console.log(cards);
+    //fetch data
+    // const abortController = new AbortController();
+    // const signal = abort.Controller.signal;
+    // //fetch 
+    // fetch('/api',{signal}).then(res=>res.json()).then(data=>{
+
+    // })
+  }, [])
+  
   return (
     <section id="foreground" className=''>
         <header className=''>
@@ -11,15 +24,10 @@ const Foreground = () => {
             </h1>
         </header>
         <section id="cards" className='flex justify-center'>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {cards.map((data)=>{
+          const {id} = data;
+          return <Card {...data} key={id}/>
+        })}
         </section>
     </section>
   )
